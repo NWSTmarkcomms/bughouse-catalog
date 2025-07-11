@@ -13,7 +13,7 @@
   <div class="logo-nav-container">
     <img src="images/logo-placeholder.png" alt="Bug House Logo" class="logo">
     <nav class="navbar">
-      <a href="index.html">Home</a>
+      <a href="https://bughouse-marketing-print.netlify.app/" target="_blank" rel="noopener noreferrer">Home</a>
       <a href="https://bughouse-marketing-print.netlify.app/" target="_blank" rel="noopener noreferrer">Catalog</a>
       <a href="https://bughouse-leavebehinds.netlify.app/leave-behinds.html" target="_blank" rel="noopener noreferrer">Leave Behinds</a>
       <a href="https://bughouse-door-hangers.netlify.app/" target="_blank" rel="noopener noreferrer">Door Hangers</a>
@@ -35,17 +35,43 @@
     <section class="product-grid">
 
       <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-allservices-lb.jpg" alt="All Services Leave Behind">
-  </div>
+
+             <div class="product-card">
+        <h2 class="product-title">All Services Leave Behind</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/BHPC-allservices-lb.jpg" alt="All Services Leave Behind" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/BHPC-allservices-lb.jpg" alt="All Services Leave Behind" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+
+
   <div class="product-details">
-    <h2>All Services Leave Behind</h2>
-    <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
-      <input type="text" name="fullName" placeholder="Manager Name" required>
-      <input type="email" name="email" placeholder="Manager Email" required>
-      <input type="number" name="quantity" placeholder="Quantity" min="1" required>
-      <select name="region" required>
-        <option value="">Select Office</option>
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
+          
+          <form action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" method="POST" target="_blank">
+            <input type="text" name="fullName" placeholder="Manager Name" required>
+            <input type="email" name="email" placeholder="Manager Email" required>
+            <select name="Quantity" required>
+              <option value="" disabled selected>Select Quantity</option>
+              <option value="100">100</option>
+              <option value="250">250</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+            </select>
+            <select name="office" required>
+              <option value="" disabled selected>Select Office</option>
         <option value="Augusta - BHPC">Augusta - BHPC</option>
         <option value="Carrollton - BHPC">Carrollton - BHPC</option>
         <option value="Dublin - BHPC">Dublin - BHPC</option>
@@ -54,15 +80,34 @@
         <option value="Macon - BHPC">Macon - BHPC</option>
         <option value="Madison - BHPC">Madison - BHPC</option>
         <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons Island - BHPC">St. Simons Island - BHPC</option>
+        <option value="St. Simons Island - BHPC">St. Simons - BHPC</option>
         <option value="Warner Robbins - BHPC">Warner Robbins - BHPC</option>
         <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-      </select>
-      <input type="hidden" name="product" value="All Services Leave Behind">
-      <button type="submit" class="button">Request</button>
-    </form>
-  </div>
-</div>
+            </select>
+            <input type="hidden" name="product" value="All Services Leave Behind">
+            <button type="submit">Request</button>
+          </form>
+
+              <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
+
+        </div>
+      </div>
 
     
   
@@ -547,18 +592,44 @@
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/fallback.png" alt="All Services Flyer">
-  </div>
+ <div class="product-card row-layout">
+
+             <div class="product-card">
+        <h2 class="product-title">All Services Flyer</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="All Services Flyer" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="All Services Flyer" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+
+
   <div class="product-details">
-    <h2>All Services Flyer</h2>
-    <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
-      <input type="text" name="fullName" placeholder="Manager Name" required>
-      <input type="email" name="email" placeholder="Manager Email" required>
-      <input type="number" name="quantity" placeholder="Quantity" min="1" required>
-      <select name="region" required>
-        <option value="">Select Office</option>
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
+          
+          <form action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" method="POST" target="_blank">
+            <input type="text" name="fullName" placeholder="Manager Name" required>
+            <input type="email" name="email" placeholder="Manager Email" required>
+            <select name="Quantity" required>
+              <option value="" disabled selected>Select Quantity</option>
+              <option value="100">100</option>
+              <option value="250">250</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+            </select>
+            <select name="office" required>
+              <option value="" disabled selected>Select Office</option>
         <option value="Augusta - BHPC">Augusta - BHPC</option>
         <option value="Carrollton - BHPC">Carrollton - BHPC</option>
         <option value="Dublin - BHPC">Dublin - BHPC</option>
@@ -570,18 +641,58 @@
         <option value="St. Simons Island - BHPC">St. Simons Island - BHPC</option>
         <option value="Warner Robbins - BHPC">Warner Robbins - BHPC</option>
         <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-      </select>
-      <input type="hidden" name="product" value="All Services Flyer">
-      <button type="submit" class="button">Request</button>
-    </form>
-  </div>
-</div>
+            </select>
+            <input type="hidden" name="product" value="All Services Flyer">
+            <button type="submit">Request</button>
+          </form>
+
+          <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
+
+        </div>
+      </div>
     
       <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/fallback.png" alt="Coffee Shop Takeover Cards">
-  </div>
+
+          <div class="product-card">
+        <h2 class="product-title">Coffee Shop Takeover Cards</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/coffee.png" alt="Coffee Shop Takeover Cards" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/coffee.png" alt="Coffee Shop Takeover Cards" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+
   <div class="product-details">
+
+    <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
+
     <h2>Coffee Shop Takeover Cards</h2>
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
@@ -597,13 +708,32 @@
         <option value="Macon - BHPC">Macon - BHPC</option>
         <option value="Madison - BHPC">Madison - BHPC</option>
         <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons Island - BHPC">St. Simons Island - BHPC</option>
+        <option value="St. Simons Island - BHPC">St. Simons - BHPC</option>
         <option value="Warner Robbins - BHPC">Warner Robbins - BHPC</option>
         <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
       </select>
       <input type="hidden" name="product" value="Coffee Shop Takeover Cards">
       <button type="submit" class="button">Request</button>
     </form>
+
+     <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
+
   </div>
 </div>
 </main>
