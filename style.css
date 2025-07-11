@@ -147,9 +147,7 @@ body {
 }
 
 .row-layout {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: block; /* REMOVE any flex-direction */
 }
 
 .product-card {
