@@ -50,10 +50,10 @@
             <img src="images/BHPC-allservices-lb.jpg" alt="All Services Leave Behind" class="flyer-expanded-img" />
           </label>
         </div>
-        </div>
+      </div>
 
 
-  <div class="product-details">
+        <div class="product-details">
                <form 
                   id="zapierForm"
                   action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
@@ -111,13 +111,28 @@
 
     
   
-    
-      <div class="product-card">
-  <div class="product-image">
-    <img src="images/BHPC-crawlspace-lb.jpg" alt="CrawlSpace Leave Behind">
-  </div>
-  <div class="product-details">
-    <h2>CrawlSpace Leave Behind</h2>
+      <div class="product-card"></div>
+
+      <h2 class="product-title">CrawlSpace Leave Behind</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="CrawlSpace Leave Behind" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="CrawlSpace Leave Behind" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -139,15 +154,49 @@
       <input type="hidden" name="product" value="CrawlSpace Leave Behind">
       <button type="submit" class="button">Request</button>
     </form>
+
+            <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/fallback.png" alt="Mosquito Leave Behind">
-  </div>
-  <div class="product-details">
-    <h2>Mosquito Leave Behind</h2>
+          <div class="product-card"></div>
+
+      <h2 class="product-title">Mosquito Leave Behind</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Mosquito Leave Behind" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Mosquito Leave Behind" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -169,15 +218,49 @@
       <input type="hidden" name="product" value="Mosquito Leave Behind">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-sentricon-lb.jpg" alt="Sentricon Leave Behind">
-  </div>
-  <div class="product-details">
-    <h2>Sentricon Leave Behind</h2>
+     <div class="product-card"></div>
+
+      <h2 class="product-title">Sentricon Leave Behind</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Sentricon Leave Behind" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Sentricon Leave Behind" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -199,15 +282,48 @@
       <input type="hidden" name="product" value="Sentricon Leave Behind">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
-    
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/fallback.png" alt="Cellulose Insulation Leave Behind">
-  </div>
-  <div class="product-details">
-    <h2>Cellulose Insulation Leave Behind</h2>
+     <div class="product-card"></div>
+
+      <h2 class="product-title">Cellulose Insulation Leave Behind</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Cellulose Insulation Leave Behind" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Cellulose Insulation Leave Behind" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -229,15 +345,49 @@
       <input type="hidden" name="product" value="Cellulose Insulation Leave Behind">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-wildlife-lb.jpg" alt="Wildlife Leave Behind">
-  </div>
-  <div class="product-details">
-    <h2>Wildlife Leave Behind</h2>
+      <div class="product-card"></div>
+
+      <h2 class="product-title">Wildlife Leave Behind</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Wildlife Leave Behind" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Wildlife Leave Behind" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -259,15 +409,49 @@
       <input type="hidden" name="product" value="Wildlife Leave Behind">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
 
-    <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-in2care-lb.jpg" alt="In2Care Leave Behind">
-  </div>
-  <div class="product-details">
-    <h2>In2Care Leave Behind</h2>
+<div class="product-card"></div>
+
+      <h2 class="product-title">In2Care Leave Behind</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="In2Care Leave Behind" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="In2Care Leave Behind" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -289,15 +473,49 @@
       <input type="hidden" name="product" value="In2Care Leave Behind">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
 
-<div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-specialty-lb.jpg" alt="Speciality Services Leave Behind">
-  </div>
-  <div class="product-details">
-    <h2>Speciality Services Leave Behind</h2>
+<div class="product-card">
+
+        <h2 class="product-title">Speciality Services Leave Behind</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Speciality Services Leave Behind" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Speciality Services Leave Behind" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -319,15 +537,49 @@
       <input type="hidden" name="product" value="Speciality Services Leave Behind">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-allservices-dh.jpg" alt="All Services Door Hanger">
-  </div>
-  <div class="product-details">
-    <h2>All Services Door Hanger</h2>
+      <div class="product-card">
+
+        <h2 class="product-title">All Services Door Hanger</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="All Services Door Hanger" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="All Services Door Hanger" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -349,15 +601,49 @@
       <input type="hidden" name="product" value="All Services Door Hanger">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/fallback.png" alt="CrawlSpace Door Hanger">
-  </div>
-  <div class="product-details">
-    <h2>CrawlSpace Door Hanger</h2>
+      <div class="product-card">
+
+        <h2 class="product-title">CrawlSpace Door Hanger</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="CrawlSpace Door Hanger" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="CrawlSpace Door Hanger" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
    <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -379,15 +665,49 @@
       <input type="hidden" name="product" value="CrawlSpace Door Hanger">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-in2care-dh.jpg" alt="In2Care Door Hanger">
-  </div>
-  <div class="product-details">
-    <h2>In2Care Door Hanger</h2>
+      <div class="product-card">
+
+        <h2 class="product-title">In2Care Door Hanger</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="In2Care Door Hanger" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="In2Care Door Hanger" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -406,18 +726,52 @@
         <option value="Warner Robbins - BHPC">Warner Robbins - BHPC</option>
         <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
       </select>
-      <input type="hidden" name="product" value="All Services Leave Behind">
+      <input type="hidden" name="product" value="In2Care Door Hanger">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-     <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-mosquito-dh.jpg" alt="Mosquito Door Hanger">
-  </div>
-  <div class="product-details">
-    <h2>Mosquito Door Hanger</h2>
+         <div class="product-card">
+
+        <h2 class="product-title">Mosquito Door Hanger</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Mosquito Door Hanger" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Mosquito Door Hanger" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -439,15 +793,49 @@
       <input type="hidden" name="product" value="Mosquito Door Hanger">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-sentricon-dh.jpg" alt="Sentricon Door Hanger">
-  </div>
-  <div class="product-details">
-    <h2>Sentricon Door Hanger</h2>
+            <div class="product-card">
+
+        <h2 class="product-title">Sentricon Door Hanger</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Sentricon Door Hanger" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Sentricon Door Hanger" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -469,15 +857,49 @@
       <input type="hidden" name="product" value="Sentricon Door Hanger">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-cellulose-insulation-dh.jpg" alt="Cellulose Insulation Door Hanger">
-  </div>
-  <div class="product-details">
-    <h2>Cellulose Insulation Door Hanger</h2>
+      <div class="product-card">
+
+        <h2 class="product-title">Cellulose Insulation Door Hanger</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Cellulose Insulation Door Hanger" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Cellulose Insulation Door Hanger" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
       <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -499,15 +921,49 @@
       <input type="hidden" name="product" value="Cellulose Insulation Door Hanger">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-wildlife-dh.jpg" alt="Wildlife Door Hanger">
-  </div>
-  <div class="product-details">
-    <h2>Wildlife Door Hanger</h2>
+       <div class="product-card">
+
+        <h2 class="product-title">Wildlife Door Hanger</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Wildlife Door Hanger" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Wildlife Door Hanger" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -529,15 +985,48 @@
       <input type="hidden" name="product" value="Wildlife Door Hanger">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
-    
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-specialty-services-dh.jpg" alt="Speciality Services Door Hanger">
-  </div>
-  <div class="product-details">
-    <h2>Speciality Services Door Hanger</h2>
+       <div class="product-card">
+
+        <h2 class="product-title">Speciality Services Door Hanger</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Speciality Services Door Hanger" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Speciality Services Door Hanger" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
     <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -559,15 +1048,49 @@
       <input type="hidden" name="product" value="Speciality Services Door Hanger">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
-      <div class="product-card row-layout">
-  <div class="product-image">
-    <img src="images/BHPC-thank-you-card.jpg" alt="Thank You Card">
-  </div>
-  <div class="product-details">
-    <h2>Thank You Card</h2>
+    <div class="product-card">
+
+        <h2 class="product-title">Thank You Card</h2>
+        <div class="row-layout">
+
+        <div class="flyer-expand-toggle">
+        <input type="checkbox" id="expandToggle" class="expand-checkbox" hidden>
+        <label for="expandToggle" class="flyer-thumb-container">
+          <img src="images/fallback.png" alt="Thank You Card" class="flyer-thumb" />
+        </label>
+        <div class="flyer-expanded-view">
+          <label for="expandToggle">
+            <img src="images/fallback.png" alt="Thank You Card" class="flyer-expanded-img" />
+          </label>
+        </div>
+        </div>
+        <div class="product-details">
+               <form 
+                  id="zapierForm"
+                  action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
+                  method="POST"
+                >
       <form action="https://hooks.zapier.com/hooks/catch/12716030/uylxl5q/" method="POST" target="_blank" class="order-form">
       <input type="text" name="fullName" placeholder="Manager Name" required>
       <input type="email" name="email" placeholder="Manager Email" required>
@@ -589,12 +1112,29 @@
       <input type="hidden" name="product" value="Thank You Card">
       <button type="submit" class="button">Request</button>
     </form>
+
+        <script>
+              document.getElementById("zapierForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                  method: "POST",
+                  body: data,
+                }).then(() => {
+                  window.location.href = "https://bughousesuccess.netlify.app/index.html";
+                }).catch((err) => {
+                  alert("Oops! Something went wrong.");
+                  console.error(err);
+                });
+              });
+            </script>
   </div>
 </div>
     
  <div class="product-card">
 
-             <div class="product-card">
         <h2 class="product-title">All Services Flyer</h2>
         <div class="row-layout">
 
